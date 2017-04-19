@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5FDFE85-3904-4F35-AAA9-41CA8F67D135</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AmericanDiveBars</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22c1f4fe-bd39-9a47-8520-9dc4bcf51f48</key>
+		<string>http://192.168.1.25:8081/svn/ios_adb</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AmericanDiveBars.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22c1f4fe-bd39-9a47-8520-9dc4bcf51f48</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22c1f4fe-bd39-9a47-8520-9dc4bcf51f48</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22c1f4fe-bd39-9a47-8520-9dc4bcf51f48</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_adb</string>
+		</dict>
+	</array>
+</dict>
+</plist>

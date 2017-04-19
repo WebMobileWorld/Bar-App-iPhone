@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarDetailHalfMugViewController">
+            <connections>
+                <outlet property="tblView" destination="Pcj-1p-dJd" id="y2j-2z-DPv"/>
+                <outlet property="view" destination="fHN-Ln-zDc" id="b79-uV-PSZ"/>
+                <outlet property="viewShowMore" destination="Sxm-ws-dqf" id="SSa-Se-Nr7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fHN-Ln-zDc">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Pcj-1p-dJd" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mM5-T4-1df"/>
+                        <outlet property="delegate" destination="-1" id="HAT-mv-h2e"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-ws-dqf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Pcj-1p-dJd" firstAttribute="leading" secondItem="fHN-Ln-zDc" secondAttribute="leading" id="1Rh-z1-2ov"/>
+                <constraint firstItem="Sxm-ws-dqf" firstAttribute="leading" secondItem="Pcj-1p-dJd" secondAttribute="leading" id="GWx-wH-sAi"/>
+                <constraint firstItem="Sxm-ws-dqf" firstAttribute="bottom" secondItem="Pcj-1p-dJd" secondAttribute="bottom" id="SiC-ye-hC3"/>
+                <constraint firstItem="Sxm-ws-dqf" firstAttribute="top" secondItem="Pcj-1p-dJd" secondAttribute="top" id="YyL-Y7-FoE"/>
+                <constraint firstAttribute="bottom" secondItem="Pcj-1p-dJd" secondAttribute="bottom" id="dUW-Zc-BZ6"/>
+                <constraint firstItem="Pcj-1p-dJd" firstAttribute="top" secondItem="fHN-Ln-zDc" secondAttribute="top" id="ekN-5y-hIl"/>
+                <constraint firstItem="Sxm-ws-dqf" firstAttribute="trailing" secondItem="Pcj-1p-dJd" secondAttribute="trailing" id="llM-yB-BtH"/>
+                <constraint firstAttribute="trailing" secondItem="Pcj-1p-dJd" secondAttribute="trailing" id="vfS-Fm-GdK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="357" y="476"/>
+        </view>
+    </objects>
+</document>

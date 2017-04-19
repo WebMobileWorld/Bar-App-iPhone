@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFavoriteBarViewController">
+            <connections>
+                <outlet property="lblNoRecord" destination="DPp-Uc-zUM" id="zhV-aQ-9KI"/>
+                <outlet property="tblView" destination="fRd-VL-jvV" id="RVf-TQ-QJu"/>
+                <outlet property="view" destination="bor-28-zCK" id="e7J-bL-D8Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bor-28-zCK">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-VL-jvV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9Qu-rL-foX"/>
+                        <outlet property="delegate" destination="-1" id="r8l-H2-BDj"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Record Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPp-Uc-zUM">
+                    <rect key="frame" x="0.0" y="80" width="320" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                    <color key="textColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fRd-VL-jvV" firstAttribute="top" secondItem="bor-28-zCK" secondAttribute="top" id="Gbs-ZW-W7a"/>
+                <constraint firstItem="fRd-VL-jvV" firstAttribute="leading" secondItem="bor-28-zCK" secondAttribute="leading" id="IvA-Zc-sHZ"/>
+                <constraint firstItem="DPp-Uc-zUM" firstAttribute="trailing" secondItem="fRd-VL-jvV" secondAttribute="trailing" id="Rac-36-uu5"/>
+                <constraint firstAttribute="trailing" secondItem="fRd-VL-jvV" secondAttribute="trailing" id="VN2-Z8-P3m"/>
+                <constraint firstItem="DPp-Uc-zUM" firstAttribute="top" secondItem="bor-28-zCK" secondAttribute="top" constant="80" id="Y2Z-gi-n5O"/>
+                <constraint firstItem="DPp-Uc-zUM" firstAttribute="leading" secondItem="fRd-VL-jvV" secondAttribute="leading" id="YbF-nF-mOB"/>
+                <constraint firstAttribute="bottom" secondItem="fRd-VL-jvV" secondAttribute="bottom" id="bPt-HR-Roa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="461" y="453"/>
+        </view>
+    </objects>
+</document>

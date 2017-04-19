@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TriviaStartViewController">
+            <connections>
+                <outlet property="bg" destination="d9f-yM-13I" id="yBa-z5-7y2"/>
+                <outlet property="btnStartGame" destination="05r-37-BHF" id="uXU-jZ-Rhr"/>
+                <outlet property="view" destination="J1r-Ry-wjh" id="MOq-wh-b9P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="J1r-Ry-wjh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-signup-bg-iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="d9f-yM-13I">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgW-I5-arc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05r-37-BHF">
+                    <rect key="frame" x="69" y="259" width="182" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="182" id="Cg9-j3-gMe"/>
+                        <constraint firstAttribute="height" constant="50" id="sKh-kU-ddc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                    <state key="normal" title="Start Trivia " backgroundImage="gradient.png"/>
+                    <connections>
+                        <action selector="btnStartGameClicked:" destination="-1" eventType="touchUpInside" id="4Dp-Sj-fLc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d9f-yM-13I" firstAttribute="top" secondItem="J1r-Ry-wjh" secondAttribute="top" id="3hB-CH-BG9"/>
+                <constraint firstAttribute="bottom" secondItem="NgW-I5-arc" secondAttribute="bottom" id="4QT-3d-pYs"/>
+                <constraint firstItem="d9f-yM-13I" firstAttribute="top" secondItem="NgW-I5-arc" secondAttribute="top" id="Dcs-8n-LqX"/>
+                <constraint firstItem="d9f-yM-13I" firstAttribute="leading" secondItem="NgW-I5-arc" secondAttribute="leading" id="E1A-9d-220"/>
+                <constraint firstItem="NgW-I5-arc" firstAttribute="leading" secondItem="J1r-Ry-wjh" secondAttribute="leading" id="J7b-Bl-TnZ"/>
+                <constraint firstAttribute="bottom" secondItem="d9f-yM-13I" secondAttribute="bottom" id="Lev-Ez-Cph"/>
+                <constraint firstAttribute="trailing" secondItem="d9f-yM-13I" secondAttribute="trailing" id="lmU-6e-XWm"/>
+                <constraint firstItem="05r-37-BHF" firstAttribute="centerX" secondItem="J1r-Ry-wjh" secondAttribute="centerX" id="pNf-t8-oZf"/>
+                <constraint firstItem="05r-37-BHF" firstAttribute="centerY" secondItem="J1r-Ry-wjh" secondAttribute="centerY" id="u7W-Qo-dDW"/>
+                <constraint firstAttribute="trailing" secondItem="NgW-I5-arc" secondAttribute="trailing" id="x8Z-tv-xIa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <point key="canvasLocation" x="-9" y="-65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+        <image name="login-signup-bg-iphone.png" width="320" height="568"/>
+    </resources>
+</document>

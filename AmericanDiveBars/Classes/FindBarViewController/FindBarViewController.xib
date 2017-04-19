@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindBarViewController">
+            <connections>
+                <outlet property="bg" destination="2vQ-93-Dze" id="RlZ-fu-zAV"/>
+                <outlet property="btnLocAnotherArea" destination="eCq-nW-lu5" id="jZp-pO-PN7"/>
+                <outlet property="btnLocAroundMe" destination="8kq-2B-Wfm" id="IGY-fo-yD2"/>
+                <outlet property="btnSearchAnotherArea" destination="lNv-js-xy9" id="VNX-LP-JeS"/>
+                <outlet property="btnSearchAroundMe" destination="mvc-uP-Xgb" id="Xij-ae-tzE"/>
+                <outlet property="view" destination="O7U-gl-Ah1" id="7gm-EI-0Nm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="O7U-gl-Ah1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barsearch-bg-iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="2vQ-93-Dze">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b1-gO-j9Q">
+                    <rect key="frame" x="24" y="110" width="272" height="330"/>
+                    <subviews>
+                        <view alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-qJ-KrW">
+                            <rect key="frame" x="0.0" y="50" width="272" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AROUND ME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="i3P-eZ-rvj">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mvc-uP-Xgb">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSearchAroundMe_Clicked" destination="-1" eventType="touchUpInside" id="S5z-f7-A5n"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="mvc-uP-Xgb" firstAttribute="trailing" secondItem="i3P-eZ-rvj" secondAttribute="trailing" id="5M3-8H-mn7"/>
+                                <constraint firstItem="i3P-eZ-rvj" firstAttribute="leading" secondItem="oF8-qJ-KrW" secondAttribute="leading" id="5aB-Ak-27m"/>
+                                <constraint firstItem="mvc-uP-Xgb" firstAttribute="bottom" secondItem="i3P-eZ-rvj" secondAttribute="bottom" id="GPs-Ba-ZiQ"/>
+                                <constraint firstAttribute="bottom" secondItem="i3P-eZ-rvj" secondAttribute="bottom" id="JbR-B8-UJ3"/>
+                                <constraint firstItem="i3P-eZ-rvj" firstAttribute="leading" secondItem="mvc-uP-Xgb" secondAttribute="leading" id="ZFT-rE-3if"/>
+                                <constraint firstItem="i3P-eZ-rvj" firstAttribute="top" secondItem="oF8-qJ-KrW" secondAttribute="top" id="le0-9d-96G"/>
+                                <constraint firstItem="mvc-uP-Xgb" firstAttribute="top" secondItem="i3P-eZ-rvj" secondAttribute="top" id="pk3-d8-U0p"/>
+                                <constraint firstAttribute="trailing" secondItem="i3P-eZ-rvj" secondAttribute="trailing" id="x8G-uH-D31"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-hb-8P4">
+                            <rect key="frame" x="0.0" y="110" width="272" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED SEARCH" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="QRa-r8-8Lx">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lNv-js-xy9">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSearchAnotherArea_Clicked" destination="-1" eventType="touchUpInside" id="Hwh-v7-3cf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="lNv-js-xy9" firstAttribute="bottom" secondItem="QRa-r8-8Lx" secondAttribute="bottom" id="ChZ-c3-9Hn"/>
+                                <constraint firstItem="QRa-r8-8Lx" firstAttribute="leading" secondItem="lNv-js-xy9" secondAttribute="leading" id="M5w-al-9v9"/>
+                                <constraint firstAttribute="trailing" secondItem="QRa-r8-8Lx" secondAttribute="trailing" id="R8Z-Eh-fj8"/>
+                                <constraint firstItem="QRa-r8-8Lx" firstAttribute="top" secondItem="lNv-js-xy9" secondAttribute="top" id="Xpk-Gg-msr"/>
+                                <constraint firstAttribute="bottom" secondItem="lNv-js-xy9" secondAttribute="bottom" id="YKl-ei-97K"/>
+                                <constraint firstItem="lNv-js-xy9" firstAttribute="top" secondItem="bCr-hb-8P4" secondAttribute="top" id="YTs-Hj-BdI"/>
+                                <constraint firstItem="QRa-r8-8Lx" firstAttribute="trailing" secondItem="lNv-js-xy9" secondAttribute="trailing" id="ea8-8E-2Hj"/>
+                                <constraint firstItem="QRa-r8-8Lx" firstAttribute="leading" secondItem="bCr-hb-8P4" secondAttribute="leading" id="tRp-59-kTN"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-IX-yAS">
+                            <rect key="frame" x="0.0" y="220" width="272" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AROUND ME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="JtM-Un-ck0">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-2B-Wfm">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnLocAroundMe_Clicked" destination="-1" eventType="touchUpInside" id="LJk-Ox-GTt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="JtM-Un-ck0" firstAttribute="bottom" secondItem="8kq-2B-Wfm" secondAttribute="bottom" id="88C-fP-CIZ"/>
+                                <constraint firstItem="8kq-2B-Wfm" firstAttribute="trailing" secondItem="JtM-Un-ck0" secondAttribute="trailing" id="8jq-no-bOF"/>
+                                <constraint firstAttribute="trailing" secondItem="8kq-2B-Wfm" secondAttribute="trailing" id="CRC-gi-vNB"/>
+                                <constraint firstAttribute="bottom" secondItem="8kq-2B-Wfm" secondAttribute="bottom" id="TId-gb-itm"/>
+                                <constraint firstItem="8kq-2B-Wfm" firstAttribute="leading" secondItem="xrM-IX-yAS" secondAttribute="leading" id="bgo-Jg-9ow"/>
+                                <constraint firstItem="JtM-Un-ck0" firstAttribute="top" secondItem="xrM-IX-yAS" secondAttribute="top" id="en4-PX-Q88"/>
+                                <constraint firstItem="JtM-Un-ck0" firstAttribute="top" secondItem="8kq-2B-Wfm" secondAttribute="top" id="hEb-JJ-Hvk"/>
+                                <constraint firstItem="8kq-2B-Wfm" firstAttribute="leading" secondItem="JtM-Un-ck0" secondAttribute="leading" id="wvh-Gf-UAp"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoG-VU-5xt">
+                            <rect key="frame" x="0.0" y="280" width="272" height="50"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVANCED SEARCH" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="Kj1-a8-4VH">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button hidden="YES" opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eCq-nW-lu5">
+                                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnLocAnotherArea_Clicked" destination="-1" eventType="touchUpInside" id="NRj-x2-gQi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.48627450979999998" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="eCq-nW-lu5" firstAttribute="leading" secondItem="JoG-VU-5xt" secondAttribute="leading" id="A8V-oJ-D8S"/>
+                                <constraint firstItem="eCq-nW-lu5" firstAttribute="top" secondItem="JoG-VU-5xt" secondAttribute="top" id="AmR-Cd-GEK"/>
+                                <constraint firstItem="eCq-nW-lu5" firstAttribute="top" secondItem="Kj1-a8-4VH" secondAttribute="top" id="IAP-Nj-7HK"/>
+                                <constraint firstAttribute="trailing" secondItem="Kj1-a8-4VH" secondAttribute="trailing" id="O02-DA-rPH"/>
+                                <constraint firstItem="Kj1-a8-4VH" firstAttribute="trailing" secondItem="eCq-nW-lu5" secondAttribute="trailing" id="T9a-aQ-m3L"/>
+                                <constraint firstItem="Kj1-a8-4VH" firstAttribute="bottom" secondItem="eCq-nW-lu5" secondAttribute="bottom" id="hBV-c8-q7a"/>
+                                <constraint firstItem="eCq-nW-lu5" firstAttribute="leading" secondItem="Kj1-a8-4VH" secondAttribute="leading" id="mOE-SW-zDb"/>
+                                <constraint firstAttribute="bottom" secondItem="Kj1-a8-4VH" secondAttribute="bottom" id="oLH-za-aXE"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAR SEARCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="LwM-l3-oN3">
+                            <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="CFh-ut-FPR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENTS &amp; HAPPY HOURS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="83H-bh-GYI">
+                            <rect key="frame" x="0.0" y="170" width="272" height="50"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="hoP-kE-feG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bCr-hb-8P4" firstAttribute="top" secondItem="oF8-qJ-KrW" secondAttribute="bottom" constant="10" id="0J4-US-nFS"/>
+                        <constraint firstItem="LwM-l3-oN3" firstAttribute="trailing" secondItem="oF8-qJ-KrW" secondAttribute="trailing" id="0rd-Hs-MII"/>
+                        <constraint firstItem="xrM-IX-yAS" firstAttribute="leading" secondItem="JoG-VU-5xt" secondAttribute="leading" id="1jn-WE-V2d"/>
+                        <constraint firstItem="bCr-hb-8P4" firstAttribute="leading" secondItem="oF8-qJ-KrW" secondAttribute="leading" id="1yz-hf-CiX"/>
+                        <constraint firstAttribute="height" constant="330" id="27E-M2-zmt"/>
+                        <constraint firstItem="oF8-qJ-KrW" firstAttribute="trailing" secondItem="bCr-hb-8P4" secondAttribute="trailing" id="2Pk-uD-uW6"/>
+                        <constraint firstItem="bCr-hb-8P4" firstAttribute="top" secondItem="9b1-gO-j9Q" secondAttribute="top" constant="110" id="3kJ-48-COA"/>
+                        <constraint firstItem="xrM-IX-yAS" firstAttribute="top" secondItem="83H-bh-GYI" secondAttribute="bottom" id="7zk-u2-MA1"/>
+                        <constraint firstItem="LwM-l3-oN3" firstAttribute="top" secondItem="9b1-gO-j9Q" secondAttribute="top" id="E0t-eW-0Et"/>
+                        <constraint firstItem="JoG-VU-5xt" firstAttribute="top" secondItem="xrM-IX-yAS" secondAttribute="bottom" constant="10" id="Feh-Sr-xOT"/>
+                        <constraint firstItem="xrM-IX-yAS" firstAttribute="top" secondItem="9b1-gO-j9Q" secondAttribute="top" constant="220" id="Gr6-Np-C5x"/>
+                        <constraint firstItem="83H-bh-GYI" firstAttribute="top" secondItem="bCr-hb-8P4" secondAttribute="bottom" constant="10" id="HHC-H9-BsP"/>
+                        <constraint firstAttribute="bottom" secondItem="JoG-VU-5xt" secondAttribute="bottom" id="PBV-58-yx6"/>
+                        <constraint firstItem="oF8-qJ-KrW" firstAttribute="top" secondItem="LwM-l3-oN3" secondAttribute="bottom" id="RPy-T6-OGo"/>
+                        <constraint firstItem="83H-bh-GYI" firstAttribute="leading" secondItem="bCr-hb-8P4" secondAttribute="leading" id="WWd-Na-QhW"/>
+                        <constraint firstItem="83H-bh-GYI" firstAttribute="leading" secondItem="xrM-IX-yAS" secondAttribute="leading" id="d2E-FD-zjo"/>
+                        <constraint firstItem="JoG-VU-5xt" firstAttribute="top" secondItem="9b1-gO-j9Q" secondAttribute="top" constant="280" id="nHh-AI-wve"/>
+                        <constraint firstItem="JoG-VU-5xt" firstAttribute="leading" secondItem="9b1-gO-j9Q" secondAttribute="leading" id="nfX-s8-gZf"/>
+                        <constraint firstAttribute="trailing" secondItem="bCr-hb-8P4" secondAttribute="trailing" id="nh2-17-Eiw"/>
+                        <constraint firstItem="bCr-hb-8P4" firstAttribute="trailing" secondItem="83H-bh-GYI" secondAttribute="trailing" id="pzk-E7-0mR"/>
+                        <constraint firstItem="xrM-IX-yAS" firstAttribute="trailing" secondItem="JoG-VU-5xt" secondAttribute="trailing" id="s4S-Qr-sL4"/>
+                        <constraint firstItem="LwM-l3-oN3" firstAttribute="leading" secondItem="oF8-qJ-KrW" secondAttribute="leading" id="z1X-P1-v6W"/>
+                        <constraint firstItem="83H-bh-GYI" firstAttribute="trailing" secondItem="xrM-IX-yAS" secondAttribute="trailing" id="z4V-oH-oxo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2vQ-93-Dze" firstAttribute="leading" secondItem="O7U-gl-Ah1" secondAttribute="leading" id="B8m-sW-xRI"/>
+                <constraint firstAttribute="bottom" secondItem="2vQ-93-Dze" secondAttribute="bottom" id="H8U-iz-1ke"/>
+                <constraint firstItem="9b1-gO-j9Q" firstAttribute="leading" secondItem="O7U-gl-Ah1" secondAttribute="leading" constant="24" id="S6e-bQ-nmA"/>
+                <constraint firstItem="9b1-gO-j9Q" firstAttribute="top" secondItem="O7U-gl-Ah1" secondAttribute="top" constant="110" id="aIo-el-3p3"/>
+                <constraint firstItem="2vQ-93-Dze" firstAttribute="top" secondItem="O7U-gl-Ah1" secondAttribute="top" id="dMc-yB-ajO"/>
+                <constraint firstItem="9b1-gO-j9Q" firstAttribute="centerX" secondItem="2vQ-93-Dze" secondAttribute="centerX" id="lmR-Ys-CfD"/>
+                <constraint firstAttribute="trailing" secondItem="2vQ-93-Dze" secondAttribute="trailing" id="rfA-0C-U9g"/>
+                <constraint firstAttribute="trailing" secondItem="9b1-gO-j9Q" secondAttribute="trailing" constant="24" id="sp4-4H-rsQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="-9" y="-65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barsearch-bg-iphone.png" width="320" height="568"/>
+    </resources>
+</document>

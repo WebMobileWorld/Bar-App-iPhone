@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiquorDirectoryViewController">
+            <connections>
+                <outlet property="alphabetView" destination="Q74-Ll-uTy" id="a7h-7v-AoI"/>
+                <outlet property="btnSuggest" destination="LcM-Ij-goF" id="9bT-Z5-b3J"/>
+                <outlet property="tblView" destination="zcs-Kc-bnK" id="PbS-yr-Jrl"/>
+                <outlet property="view" destination="bS2-Pw-qbW" id="0gp-BM-P8j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bS2-Pw-qbW">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-Kc-bnK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="s0h-8y-Ogx"/>
+                        <outlet property="delegate" destination="-1" id="n0G-Ld-oj9"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcM-Ij-goF">
+                    <rect key="frame" x="8" y="110" width="304" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="ITD-ju-jSA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                    <state key="normal" title="Suggest New Liquor" backgroundImage="gradient.png"/>
+                    <connections>
+                        <action selector="btnSuggestClicked:" destination="-1" eventType="touchUpInside" id="8gH-Om-P81"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-Ll-uTy">
+                    <rect key="frame" x="320" y="98" width="191" height="295"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="295" id="Mzt-fc-ewq"/>
+                        <constraint firstAttribute="width" constant="191" id="yeW-Tu-4zs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Q74-Ll-uTy" firstAttribute="top" secondItem="bS2-Pw-qbW" secondAttribute="top" constant="98" id="1ac-yA-ZVi"/>
+                <constraint firstAttribute="trailing" secondItem="Q74-Ll-uTy" secondAttribute="trailing" constant="-191" id="59y-Zf-zzv"/>
+                <constraint firstAttribute="bottom" secondItem="zcs-Kc-bnK" secondAttribute="bottom" id="6jk-fx-duh"/>
+                <constraint firstItem="LcM-Ij-goF" firstAttribute="top" secondItem="bS2-Pw-qbW" secondAttribute="top" constant="110" id="CC4-ew-CDT"/>
+                <constraint firstAttribute="trailing" secondItem="zcs-Kc-bnK" secondAttribute="trailing" id="OsL-Qe-glQ"/>
+                <constraint firstItem="zcs-Kc-bnK" firstAttribute="leading" secondItem="bS2-Pw-qbW" secondAttribute="leading" id="UJu-Xe-Nb3"/>
+                <constraint firstItem="LcM-Ij-goF" firstAttribute="centerX" secondItem="bS2-Pw-qbW" secondAttribute="centerX" id="ouH-BT-Qdk"/>
+                <constraint firstItem="zcs-Kc-bnK" firstAttribute="top" secondItem="bS2-Pw-qbW" secondAttribute="top" id="u3e-PC-dtl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="201" y="259"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindBarAroundMeViewController">
+            <connections>
+                <outlet property="btnSuggest" destination="ejN-vK-2vW" id="S7a-Ud-LpO"/>
+                <outlet property="btnToggle" destination="Abb-bB-uKP" id="nwL-aI-ixM"/>
+                <outlet property="tblView" destination="hUc-j1-dQD" id="iPj-hK-rKo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMap" destination="RKF-xK-P2C" id="5N5-64-ZZm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKF-xK-P2C">
+                    <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                    <animations/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KNO-F8-St6"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abb-bB-uKP">
+                    <rect key="frame" x="262" y="8" width="50" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="c84-Ia-xFM"/>
+                        <constraint firstAttribute="width" constant="50" id="jy6-1j-8vZ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="list.png"/>
+                    <connections>
+                        <action selector="btnToggleClicked:" destination="-1" eventType="touchUpInside" id="0PS-Zb-ALK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejN-vK-2vW">
+                    <rect key="frame" x="8" y="3" width="246" height="60"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                    <state key="normal" title="Suggest a Bar" backgroundImage="gradient.png"/>
+                    <connections>
+                        <action selector="btnSuggestClicked:" destination="-1" eventType="touchUpInside" id="jzI-Sv-FCN"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hUc-j1-dQD">
+                    <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bjd-t8-zYt"/>
+                        <outlet property="delegate" destination="-1" id="oPl-Aa-ox2"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RKF-xK-P2C" secondAttribute="trailing" id="634-k0-rs1"/>
+                <constraint firstItem="hUc-j1-dQD" firstAttribute="top" secondItem="Abb-bB-uKP" secondAttribute="bottom" constant="8" symbolic="YES" id="6v8-OE-Qqn"/>
+                <constraint firstItem="Abb-bB-uKP" firstAttribute="leading" secondItem="ejN-vK-2vW" secondAttribute="trailing" constant="8" symbolic="YES" id="HfB-48-aXq"/>
+                <constraint firstItem="ejN-vK-2vW" firstAttribute="centerY" secondItem="Abb-bB-uKP" secondAttribute="centerY" id="KLS-OP-4YR"/>
+                <constraint firstAttribute="trailing" secondItem="hUc-j1-dQD" secondAttribute="trailing" id="LHg-qc-UWI"/>
+                <constraint firstAttribute="bottom" secondItem="hUc-j1-dQD" secondAttribute="bottom" id="N42-Lz-hoq"/>
+                <constraint firstItem="Abb-bB-uKP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="OaO-qu-70v"/>
+                <constraint firstItem="RKF-xK-P2C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RBC-6Q-43f"/>
+                <constraint firstAttribute="bottom" secondItem="RKF-xK-P2C" secondAttribute="bottom" id="bY0-9I-Hh2"/>
+                <constraint firstItem="hUc-j1-dQD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g1K-va-61d"/>
+                <constraint firstItem="RKF-xK-P2C" firstAttribute="top" secondItem="hUc-j1-dQD" secondAttribute="top" id="kLv-E1-iau"/>
+                <constraint firstAttribute="trailing" secondItem="Abb-bB-uKP" secondAttribute="trailing" constant="8" id="q4i-UF-h3F"/>
+                <constraint firstItem="ejN-vK-2vW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="zii-0q-q2Q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="85" y="347"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+        <image name="list.png" width="50" height="50"/>
+    </resources>
+</document>

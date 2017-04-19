@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacySettingViewController">
+            <connections>
+                <outlet property="tblView" destination="KUJ-ch-3gU" id="IgM-We-QZm"/>
+                <outlet property="view" destination="0Za-p1-GPJ" id="eig-9F-6uP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0Za-p1-GPJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KUJ-ch-3gU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hpH-Bd-kTL"/>
+                        <outlet property="delegate" destination="-1" id="yCh-WW-L8y"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KUJ-ch-3gU" firstAttribute="leading" secondItem="0Za-p1-GPJ" secondAttribute="leading" id="A2X-SV-CB5"/>
+                <constraint firstAttribute="trailing" secondItem="KUJ-ch-3gU" secondAttribute="trailing" id="RaP-Qn-fw0"/>
+                <constraint firstAttribute="bottom" secondItem="KUJ-ch-3gU" secondAttribute="bottom" id="fSz-jk-tQt"/>
+                <constraint firstItem="KUJ-ch-3gU" firstAttribute="top" secondItem="0Za-p1-GPJ" secondAttribute="top" id="h8i-fY-Ulu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="461" y="453"/>
+        </view>
+    </objects>
+</document>

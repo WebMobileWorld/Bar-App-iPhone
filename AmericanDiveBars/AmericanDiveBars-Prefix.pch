@@ -1,0 +1,103 @@
+//
+//  AmericanDiveBars-Prefix.pch
+//  AmericanDiveBars
+//
+//  Created by spaculus on 8/18/15.
+//  Copyright (c) 2015 spaculus. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreText/CoreText.h>
+#import "CommonDefs.h"
+#import "Reachability.h"
+#import "CommonUtils.h"
+
+//Third Parties
+#import <Pinterest/Pinterest.h>
+#import <GooglePlus/GooglePlus.h>
+#import <GoogleOpenSource/GoogleOpenSource.h>
+
+#import "YTPlayerView.h"
+
+#import "PhoneNumberFormatter.h"
+#import "FPPopoverController.h"
+#import "TSPopoverController.h"
+#import "TSPopoverController.h"
+#import "LeftMenu_Popup.h"
+#import "MBProgressHUD.h"
+#import "TPKeyboardAvoidingTableView.h"
+#import "UIImageView+WebCache.h" //SDWEBCACHE
+#import "NSDate+NVTimeAgo.h" //DATE TIME AGO
+
+#import "JTSImageViewController.h" //Image Viewer
+#import "JTSImageInfo.h" ////Image Viewer
+
+#import "ActionSheetDatePicker.h"
+
+#import "LGFilterView.h" // Filter View
+#import "LGDrawer.h"
+#import "LGButton.h"
+
+#import "HCYoutubeParser.h"
+
+#import "NSString_stripHtml.h"
+
+#import "UzysAssetsPickerController.h"
+
+#import "UIView+Toast.h"
+
+#import "RateView.h"
+
+#import "UIViewController+BackButtonHandler.h"
+
+//Created Custom Classes
+#import "Model.h"
+#import "LoadMoreCell.h"
+#import "SearchTableView.h"
+#import "DirectoryHeaderView.h"
+#import "AlphabetSearchView.h"
+#import "ShowMoreView.h"
+#import "FavHeaderView.h"
+#import "AlbumHeaderView.h"
+#import "AddEditAlbumHeaderView.h"
+#import "AddEditAlbumFooterView.h"
+#import "PrivacySettingsFooterView.h"
+
+//View Controllers
+#import "LoginViewController.h"
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define AMSlideMenuWithoutStoryboards
+
+#define ShowAlert(myTitle, myMessage) [[[UIAlertView alloc] initWithTitle:myTitle message:myMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show]
+
+#define ShowAlertWithDelegate(title,msg,target) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:target cancelButtonTitle:@"YES" otherButtonTitles:@"NO", nil] show]
+
+#define TextViewBorderColor ((CGColorRef)[[UIColor colorWithRed:0.0/255.0 green:108.0/255.0 blue:48.0/255.0 alpha:1.0] CGColor])
+
+#define TextViewPlaceHolderColor ((UIColor *)[UIColor colorWithRed:193.0/255.0 green:193.0/255.0 blue:199.0/255.0 alpha:1.0])
+
+#define appDel ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+#endif

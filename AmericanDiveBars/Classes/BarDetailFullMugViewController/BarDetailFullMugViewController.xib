@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarDetailFullMugViewController">
+            <connections>
+                <outlet property="tblView" destination="Nw5-A9-N7R" id="C6f-7m-a7S"/>
+                <outlet property="view" destination="b6L-3C-zSa" id="fEH-6j-Og7"/>
+                <outlet property="viewShowMore" destination="xqu-c8-ggs" id="hEP-c5-HAD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="b6L-3C-zSa">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-A9-N7R" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DVw-St-8k9"/>
+                        <outlet property="delegate" destination="-1" id="qUI-or-TIB"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqu-c8-ggs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.17254901960784313" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nw5-A9-N7R" firstAttribute="leading" secondItem="b6L-3C-zSa" secondAttribute="leading" id="79p-cj-pZu"/>
+                <constraint firstItem="xqu-c8-ggs" firstAttribute="bottom" secondItem="Nw5-A9-N7R" secondAttribute="bottom" id="CQ6-nl-73h"/>
+                <constraint firstItem="Nw5-A9-N7R" firstAttribute="top" secondItem="b6L-3C-zSa" secondAttribute="top" id="Jld-SV-c4q"/>
+                <constraint firstAttribute="trailing" secondItem="Nw5-A9-N7R" secondAttribute="trailing" id="N9g-yE-Wkb"/>
+                <constraint firstAttribute="bottom" secondItem="Nw5-A9-N7R" secondAttribute="bottom" id="YgP-0D-HnF"/>
+                <constraint firstItem="xqu-c8-ggs" firstAttribute="leading" secondItem="Nw5-A9-N7R" secondAttribute="leading" id="lck-sY-xKo"/>
+                <constraint firstItem="xqu-c8-ggs" firstAttribute="top" secondItem="Nw5-A9-N7R" secondAttribute="top" id="lpk-dX-xDY"/>
+                <constraint firstItem="xqu-c8-ggs" firstAttribute="trailing" secondItem="Nw5-A9-N7R" secondAttribute="trailing" id="oPm-Hq-YtH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="263" y="364"/>
+        </view>
+    </objects>
+</document>

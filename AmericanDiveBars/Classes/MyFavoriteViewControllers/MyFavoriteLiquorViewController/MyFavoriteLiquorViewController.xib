@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFavoriteLiquorViewController">
+            <connections>
+                <outlet property="lblNoRecord" destination="wiP-4M-P1t" id="w0R-Ba-lgf"/>
+                <outlet property="tblView" destination="Zsx-dZ-3dg" id="fCk-hB-dZd"/>
+                <outlet property="view" destination="b80-kz-PTT" id="y9E-A1-WJD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="b80-kz-PTT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zsx-dZ-3dg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="e9w-A0-RP9"/>
+                        <outlet property="delegate" destination="-1" id="b2A-tn-Chf"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Record Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiP-4M-P1t">
+                    <rect key="frame" x="0.0" y="80" width="320" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
+                    <color key="textColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Zsx-dZ-3dg" firstAttribute="leading" secondItem="b80-kz-PTT" secondAttribute="leading" id="0Dy-qi-9bo"/>
+                <constraint firstItem="Zsx-dZ-3dg" firstAttribute="top" secondItem="b80-kz-PTT" secondAttribute="top" id="78p-d1-2Qb"/>
+                <constraint firstAttribute="bottom" secondItem="Zsx-dZ-3dg" secondAttribute="bottom" id="PYO-rv-W7Q"/>
+                <constraint firstItem="wiP-4M-P1t" firstAttribute="trailing" secondItem="Zsx-dZ-3dg" secondAttribute="trailing" id="amy-yC-Uh0"/>
+                <constraint firstItem="wiP-4M-P1t" firstAttribute="leading" secondItem="Zsx-dZ-3dg" secondAttribute="leading" id="cIh-Ww-40t"/>
+                <constraint firstAttribute="trailing" secondItem="Zsx-dZ-3dg" secondAttribute="trailing" id="iAN-Ge-zcb"/>
+                <constraint firstItem="wiP-4M-P1t" firstAttribute="top" secondItem="b80-kz-PTT" secondAttribute="top" constant="80" id="vEL-nS-Rh7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="461" y="453"/>
+        </view>
+    </objects>
+</document>

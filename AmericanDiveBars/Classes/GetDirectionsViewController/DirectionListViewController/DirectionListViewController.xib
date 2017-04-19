@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DirectionListViewController">
+            <connections>
+                <outlet property="tblView" destination="3x7-9w-Iy5" id="8hR-8f-2yD"/>
+                <outlet property="view" destination="UDm-JJ-QyK" id="ugx-Bp-d91"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UDm-JJ-QyK">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3x7-9w-Iy5" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0gv-MD-hZM"/>
+                        <outlet property="delegate" destination="-1" id="VKv-YU-o1c"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3x7-9w-Iy5" firstAttribute="leading" secondItem="UDm-JJ-QyK" secondAttribute="leading" id="2ab-9E-AIf"/>
+                <constraint firstAttribute="bottom" secondItem="3x7-9w-Iy5" secondAttribute="bottom" id="W3f-Hm-4Sj"/>
+                <constraint firstItem="3x7-9w-Iy5" firstAttribute="top" secondItem="UDm-JJ-QyK" secondAttribute="top" id="XYK-Z6-5bW"/>
+                <constraint firstAttribute="trailing" secondItem="3x7-9w-Iy5" secondAttribute="trailing" id="uq8-3Q-XJp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="354" y="175"/>
+        </view>
+    </objects>
+</document>

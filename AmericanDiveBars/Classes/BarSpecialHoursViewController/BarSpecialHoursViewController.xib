@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarSpecialHoursViewController">
+            <connections>
+                <outlet property="tblView" destination="pOa-0S-2pQ" id="47e-3M-pmt"/>
+                <outlet property="view" destination="CiF-kB-mtD" id="p3U-Gb-avp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CiF-kB-mtD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-0S-2pQ" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="plw-gF-B87"/>
+                        <outlet property="delegate" destination="-1" id="avd-cC-tNN"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-dv-Una">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pOa-0S-2pQ" secondAttribute="trailing" id="5sW-qZ-Edv"/>
+                <constraint firstItem="VIe-dv-Una" firstAttribute="bottom" secondItem="pOa-0S-2pQ" secondAttribute="bottom" id="Cqi-hw-FsS"/>
+                <constraint firstItem="pOa-0S-2pQ" firstAttribute="leading" secondItem="CiF-kB-mtD" secondAttribute="leading" id="IbI-xQ-l8W"/>
+                <constraint firstItem="pOa-0S-2pQ" firstAttribute="top" secondItem="CiF-kB-mtD" secondAttribute="top" id="Qjq-Xz-APh"/>
+                <constraint firstItem="VIe-dv-Una" firstAttribute="leading" secondItem="pOa-0S-2pQ" secondAttribute="leading" id="SSg-n7-Aak"/>
+                <constraint firstAttribute="bottom" secondItem="pOa-0S-2pQ" secondAttribute="bottom" id="h1q-oV-U6A"/>
+                <constraint firstItem="VIe-dv-Una" firstAttribute="top" secondItem="pOa-0S-2pQ" secondAttribute="top" id="hQf-g2-WeM"/>
+                <constraint firstItem="VIe-dv-Una" firstAttribute="trailing" secondItem="pOa-0S-2pQ" secondAttribute="trailing" id="rut-lP-om7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="357" y="476"/>
+        </view>
+    </objects>
+</document>

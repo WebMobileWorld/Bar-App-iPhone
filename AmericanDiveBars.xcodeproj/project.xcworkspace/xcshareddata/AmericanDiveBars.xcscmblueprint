@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "22c1f4fe-bd39-9a47-8520-9dc4bcf51f48",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "22c1f4fe-bd39-9a47-8520-9dc4bcf51f48" : {
+
+    },
+    "f2841007-95fe-1c46-bffe-2825fca9f059" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "22c1f4fe-bd39-9a47-8520-9dc4bcf51f48" : 0,
+    "f2841007-95fe-1c46-bffe-2825fca9f059" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F5FDFE85-3904-4F35-AAA9-41CA8F67D135",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "22c1f4fe-bd39-9a47-8520-9dc4bcf51f48" : "ios_adb",
+    "f2841007-95fe-1c46-bffe-2825fca9f059" : "GoodBoater\/ios_goodboater\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AmericanDiveBars",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AmericanDiveBars.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.25:8081\/svn\/ios_adb",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22c1f4fe-bd39-9a47-8520-9dc4bcf51f48"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.25:8081\/svn\/ios_goodboater",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f2841007-95fe-1c46-bffe-2825fca9f059"
+    }
+  ]
+}

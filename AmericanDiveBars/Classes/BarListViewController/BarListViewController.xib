@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarListViewController">
+            <connections>
+                <outlet property="btnSuggest" destination="E9h-xg-9Fr" id="w7D-gw-wLC"/>
+                <outlet property="tblView" destination="aI8-9K-bBZ" id="FYb-Nx-nxz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-9K-bBZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cve-Qh-2gj"/>
+                        <outlet property="delegate" destination="-1" id="Kz7-DF-zsH"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-xg-9Fr">
+                    <rect key="frame" x="8" y="110" width="304" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="gUX-DA-Eew"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                    <state key="normal" title="Suggest a Bar" backgroundImage="gradient.png"/>
+                    <connections>
+                        <action selector="btnSuggestClicked:" destination="-1" eventType="touchUpInside" id="4di-ls-dao"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.1803921568627451" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="E9h-xg-9Fr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="D8Y-OH-ZD4"/>
+                <constraint firstItem="aI8-9K-bBZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XTI-Ci-5Pl"/>
+                <constraint firstItem="aI8-9K-bBZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iO9-39-eSE"/>
+                <constraint firstItem="E9h-xg-9Fr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iOi-uR-EMz"/>
+                <constraint firstAttribute="trailing" secondItem="aI8-9K-bBZ" secondAttribute="trailing" id="wj3-fj-ybr"/>
+                <constraint firstAttribute="bottom" secondItem="aI8-9K-bBZ" secondAttribute="bottom" id="z6w-Mi-Kj2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="258" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient.png" width="160" height="60"/>
+    </resources>
+</document>

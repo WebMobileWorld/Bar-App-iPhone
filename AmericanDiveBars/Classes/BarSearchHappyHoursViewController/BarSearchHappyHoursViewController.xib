@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarSearchHappyHoursViewController">
+            <connections>
+                <outlet property="bg" destination="hgQ-QO-zks" id="QJL-L4-pua"/>
+                <outlet property="searchView" destination="A4Z-Dg-Lum" id="BG2-5s-I42"/>
+                <outlet property="tblView" destination="zBK-SA-yAT" id="yuv-ch-R5l"/>
+                <outlet property="view" destination="BdY-NA-FEg" id="Zcb-17-wVu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BdY-NA-FEg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barsearch-bg-iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-QO-zks">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zBK-SA-yAT" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND A HAPPY HOUR! SEARCH BY ANY FIELD BELOW!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" id="syi-hj-iuw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5R0-Uw-Rw7"/>
+                        <outlet property="delegate" destination="-1" id="pVO-Gd-biv"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-Dg-Lum">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hgQ-QO-zks" secondAttribute="trailing" id="2SO-rE-uDU"/>
+                <constraint firstItem="hgQ-QO-zks" firstAttribute="bottom" secondItem="zBK-SA-yAT" secondAttribute="bottom" id="4ke-x7-Olf"/>
+                <constraint firstItem="hgQ-QO-zks" firstAttribute="trailing" secondItem="zBK-SA-yAT" secondAttribute="trailing" id="7dp-0M-PWb"/>
+                <constraint firstItem="zBK-SA-yAT" firstAttribute="top" secondItem="BdY-NA-FEg" secondAttribute="top" id="Ez7-VK-TBy"/>
+                <constraint firstItem="A4Z-Dg-Lum" firstAttribute="bottom" secondItem="zBK-SA-yAT" secondAttribute="bottom" id="IDC-An-8Po"/>
+                <constraint firstItem="hgQ-QO-zks" firstAttribute="trailing" secondItem="A4Z-Dg-Lum" secondAttribute="trailing" id="Ug1-GN-PVe"/>
+                <constraint firstAttribute="bottom" secondItem="A4Z-Dg-Lum" secondAttribute="bottom" id="Vna-Az-uVc"/>
+                <constraint firstItem="hgQ-QO-zks" firstAttribute="top" secondItem="BdY-NA-FEg" secondAttribute="top" id="ZK5-CT-JYl"/>
+                <constraint firstItem="A4Z-Dg-Lum" firstAttribute="leading" secondItem="BdY-NA-FEg" secondAttribute="leading" id="e72-do-LOB"/>
+                <constraint firstItem="A4Z-Dg-Lum" firstAttribute="top" secondItem="hgQ-QO-zks" secondAttribute="top" id="joj-Fa-TIc"/>
+                <constraint firstItem="zBK-SA-yAT" firstAttribute="leading" secondItem="hgQ-QO-zks" secondAttribute="leading" id="nLW-rd-030"/>
+                <constraint firstItem="hgQ-QO-zks" firstAttribute="leading" secondItem="A4Z-Dg-Lum" secondAttribute="leading" id="nSZ-oz-S9m"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="-9" y="-65"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barsearch-bg-iphone.png" width="320" height="568"/>
+    </resources>
+</document>

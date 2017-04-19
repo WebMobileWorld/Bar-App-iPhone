@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiquorSuggestViewController">
+            <connections>
+                <outlet property="tblView" destination="id3-nl-Wx8" id="pSS-r6-ptJ"/>
+                <outlet property="view" destination="bFf-rY-BUG" id="a4B-bb-H5q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bFf-rY-BUG">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="id3-nl-Wx8" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cO2-C7-OyR"/>
+                        <outlet property="delegate" destination="-1" id="5Gs-7M-Ftz"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-w1-4dp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.17254901959999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FhQ-w1-4dp" firstAttribute="trailing" secondItem="id3-nl-Wx8" secondAttribute="trailing" id="8nb-wQ-m5f"/>
+                <constraint firstAttribute="trailing" secondItem="id3-nl-Wx8" secondAttribute="trailing" id="Ddw-8S-Vdz"/>
+                <constraint firstItem="FhQ-w1-4dp" firstAttribute="leading" secondItem="id3-nl-Wx8" secondAttribute="leading" id="Id7-NR-mn4"/>
+                <constraint firstItem="FhQ-w1-4dp" firstAttribute="bottom" secondItem="id3-nl-Wx8" secondAttribute="bottom" id="aZp-yu-HbM"/>
+                <constraint firstItem="id3-nl-Wx8" firstAttribute="leading" secondItem="bFf-rY-BUG" secondAttribute="leading" id="bdM-rG-tLf"/>
+                <constraint firstItem="FhQ-w1-4dp" firstAttribute="top" secondItem="id3-nl-Wx8" secondAttribute="top" id="dcD-Bz-4RO"/>
+                <constraint firstAttribute="bottom" secondItem="id3-nl-Wx8" secondAttribute="bottom" id="fBq-lK-DQK"/>
+                <constraint firstItem="id3-nl-Wx8" firstAttribute="top" secondItem="bFf-rY-BUG" secondAttribute="top" id="gTF-wK-WFt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="357" y="476"/>
+        </view>
+    </objects>
+</document>
